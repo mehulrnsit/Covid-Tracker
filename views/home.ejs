@@ -1,0 +1,56 @@
+<%- include('partial/header');%>
+<h1>
+    Country Stats
+</h1>
+<table class="table ">
+    <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Data</th>
+          <th scope="col">Numbers</th>
+        </tr>
+        </thead>
+
+
+<% for (var key in content) { %>
+
+    
+        <% if(key==="positive") { %>
+            <tr>
+            <th scope="row"><%= i++ %></th>
+            <td>Total covid cases</td>
+            <td><%=content[key]%></td>
+            </tr>
+        <%}%>
+
+        <% if(key==="positiveIncrease") { %>
+            <tr>
+            <th scope="row"><%= i++ %></th>
+            <td>Active Case</td>
+            <td><%=content[key]%></td>
+            </tr>
+        <%}%>
+
+        <% if(key==="negativeIncrease") { %>
+            <tr>
+            <th scope="row"><%= i++ %></th>
+            <td>recovered</td>
+            <td><%=content[key]%></td>
+            </tr>
+        <%}%>
+
+        <% if(key==="deathIncrease") { %>
+            <tr>
+            <th scope="row"><%= i++ %></th>
+            <td>Deaths</td>
+            <td><%=content[key]%></td>
+            </tr>
+        <%}%>
+        
+    
+<%}%>
+</table>
+
+
+
+<%- include('partial/footer');%>

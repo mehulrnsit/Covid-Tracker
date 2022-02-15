@@ -1,0 +1,46 @@
+<%- include('partial/header');%>
+
+<h1>
+    <%=Name%> Stats
+</h1>
+
+
+<table class="table ">
+    <thead class="thead-dark">
+
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">State</th>
+          <th scope="col">State Code</th>
+          <th scope="col">Name</th>
+          <th scope="col">Total Case</th>
+          <th scope="col">Active Positive</th>
+          <th scope="col">Deaths</th>
+          <!-- <th scope="col">Covid-19 Website</th> -->
+          <!-- <th scope="col">positive Cases</th> -->
+        </tr>
+        </thead>
+    
+
+
+        <%  contents.forEach(function(content){ %>
+           
+            <% if(content.state==st) { %>
+                <tr>
+                    <th scope="row"><%= i++ %></th>
+                    <td> <%= content.state %></td>
+                    <td> <%= content.fips %></td>
+                    <td> <%= Name %></td>
+                    <td> <%= content.positive%></td>
+                    <td> <%= content.positiveIncrease %></td>
+                    <td> ><%= content.death %></td>
+                   
+                </tr>
+            <%}%>
+            
+        <%})%>
+</table>
+
+
+
+<%- include('partial/footer');%>

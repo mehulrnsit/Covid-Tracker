@@ -1,0 +1,46 @@
+<%- include('partial/header');%>
+
+
+<h1>
+    States Stats
+</h1>
+
+
+<table class="table ">
+    <thead class="thead-dark">
+        
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">State</th>
+          <th scope="col">Name</th>
+          <th scope="col">State Code</th>
+          <th scope="col">Twitter Handle</th>
+          <th scope="col">Total Cases</th>
+          <th scope="col">Covid-19 Website</th>
+          <!-- <th scope="col">positive Cases</th> -->
+        </tr>
+        </thead>
+    
+
+
+        <%  contents.forEach(function(content){ %>
+           
+                <tr>
+                    <th scope="row"><a style="text-decoration: none; color: black;" href="/state?st=<%=content.state%>&Name=<%=content.name%>"><%= i++ %></a></th>
+                    <td> <a style="text-decoration: none; color: black;" href="/state?st=<%=content.state%>&Name=<%=content.name%>"><%= content.state %></a></td>
+                    <td> <a style="text-decoration: none; color: black;"  href="/state?st=<%=content.state%>&Name=<%=content.name%>"><%= content.name %></a></td>
+                    <td> <a style="text-decoration: none; color: black;" href="/state?st=<%=content.state%>&Name=<%=content.name%>"><%= content.fips %></a></td>
+                    <td> <a style="text-decoration: none; color: black;" href="/state?st=<%=content.state%>&Name=<%=content.name%>"><%= content.twitter %></a></td>
+                    <td> <a style="text-decoration: none; color: black;" href="/state?st=<%=content.state%>&Name=<%=content.name%>"><%= content.totalTestResultsField %></a></td>
+                    <td> <a style="text-decoration: none;  color: black;" href="/state?st=<%=content.state%>&Name=<%=content.name%>"><%= content.covid19Site %></a></td>
+                   
+                </tr>
+            
+                
+            
+        <%})%>
+</table>
+
+
+
+<%- include('partial/footer');%>
