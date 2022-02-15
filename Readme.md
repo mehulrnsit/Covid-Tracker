@@ -6,6 +6,6 @@
 
 ## All the data has been fetched by using https://covidtracking.com/data/api
 
-## You can use https://gentle-ridge-41602.herokuapp.com/ to see the Web Application, deployed using heroku
+## You can use https://covid-track-us.herokuapp.com/ to see the Web Application, deployed using heroku
 
 ## I have used EJS templating to render multiple pages and used node.js for the backen.
