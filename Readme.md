@@ -1,4 +1,4 @@
-## The home page shows the US Current Covid Stats
+# The home page shows the US Current Covid Stats
 
 # Click on the states option in the navbar to get metadata of all the states
 
