@@ -2,7 +2,7 @@
 
  Click on the states option in the navbar to get metadata of all the states of USA
 
- For details information about a particular state you can click on the state to fetch details
+ For details information about a particular state you can click on the state to fetch details of states
 
  All the data has been fetched by using https://covidtracking.com/data/api
 
